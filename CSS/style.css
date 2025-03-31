@@ -134,12 +134,13 @@ ul{
 
 .color-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
 .color-items img{
     margin-bottom: 20px;
+    margin: 0 25px;
 }
 
 .color-items h3{
@@ -152,4 +153,5 @@ ul{
 .color-items p{
     margin: 0;
 }
+
 
