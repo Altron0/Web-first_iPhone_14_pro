@@ -22,17 +22,19 @@ ul{
     font-size: 24px;
     line-height: 29px;
     padding: 33px 0 32px;
+
 }
 
 .cantainer{
     max-width: 1200px;
+    max-height: 100px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -42,10 +44,17 @@ ul{
     flex-basis: 0;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
 .phone{
     flex-grow: 1;
     flex-basis: 0;
     text-align: right;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .menu-items{
@@ -64,8 +73,9 @@ ul{
 .title{
     text-transform: uppercase;
     text-align: center;
+    align-items: center;
     margin: 0 0 40px;
-    color: purple; 
+    color: purple;
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
@@ -74,6 +84,11 @@ ul{
 .headline-image{
     margin-bottom: 25px;
     padding: 0 10%;
+}
+
+.image-photo{
+    display: flex;
+    justify-content: center;
 }
 
 .headline-btn{
@@ -85,9 +100,9 @@ ul{
     line-height: 29px;
     color: #fff;
     background-color: #490E84;
-    padding: 22px 117px 19px; 
-    border-radius: 30px;  
-} 
+    padding: 22px 117px 19px;
+    border-radius: 30px;
+}
 
 
 .new{
@@ -134,12 +149,13 @@ ul{
 
 .color-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
 .color-items img{
     margin-bottom: 20px;
+    margin: 25px;
 }
 
 .color-items h3{
@@ -153,3 +169,137 @@ ul{
     margin: 0;
 }
 
+.contacts-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 855px;
+    background-color: #574B63;
+    color: #fff;
+}
+
+.contacts-form{
+    width: auto;
+    padding: 140px 90px;
+    text-align: center;
+}
+
+.contact-title{
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+}
+
+.contact-input{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574B63;
+}
+
+.contact-input::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.contacts-form p{
+    opacity: .5;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contact-bth {
+    border: none;
+    text-transform: uppercase;
+    color: purple;
+    background-color: white;
+    border-radius: 30px;
+    padding: 16px 81px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #717171;
+    padding: 50px 0 ;
+}
+
+.footer-inner a{
+    margin: 0 150px;
+}
+
+.footer-privacy{
+    font-size: 218px 18px;
+}
+
+.footer-phone{
+    font-size: 235px 29px;
+}
+
+@media (max-width: 1200px){
+    .headline-image{
+        max-width: 100%;
+    }
+
+    .image-photo{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1100px){
+    .color-list{
+        flex-wrap: wrap;f
+    }
+
+    .color-item{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 960px){
+    .images-new{
+        display: none;
+    }
+
+    .new-text p, .new-text b{
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width: 560px){
+    .title{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .new-title, .color-title{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .headline-bth{
+        display: inline-block;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 90px;
+    }
+
+    .color-item{
+        width: 100%;
+    }
+}
